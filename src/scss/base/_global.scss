@@ -1,0 +1,39 @@
+body {
+  @include roboto;
+  font-weight: $fw-regular;
+  font-size: $fz-sm;
+  color: $c-primary;
+}
+
+.section-outer {
+  border-bottom: 1px solid $c-divider;
+}
+
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: $p-sm;
+  padding-bottom: $p-sm;
+
+  &--wide {
+    max-width: 1200px;
+  }
+}
+
+.btn {
+  @include quicksand;
+  border-radius: 2px;
+  font-weight: $fw-bold;
+  font-size: $fz-xs;
+  padding: 12px 16px;
+  transition: .2s;
+
+  &--primary {
+    color: #3a79ff;
+    background-color: #d2e1ff;
+
+    &:hover {
+      background-color: darken(#d2e1ff, 5%);
+    }
+  }
+}
